@@ -1,10 +1,10 @@
 {
-  "name": "ch-utils",
+  "name": "hing-utils",
   "version": "1.0.0",
   "description": "hing前端工具函数",
-  "main": "dist/ch-utils.cjs.js",
-  "module": "dist/ch-utils.esm.js",
-  "browser": "dist/ch-utils.umd.js",
+  "main": "dist/hing-utils.cjs.js",
+  "module": "dist/hing-utils.esm.js",
+  "browser": "dist/hing-utils.umd.js",
   "types": "src/index.d.ts",
   "files": [
     "src",
