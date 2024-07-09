@@ -6,4 +6,6 @@ module.exports = {
     "^.+\\.tsx?$": "ts-jest",
   },
   moduleFileExtensions: ["js", "json", "jsx", "node", "ts", "tsx"],
+  logHeapUsage: true,
+  detectOpenHandles: true,
 };

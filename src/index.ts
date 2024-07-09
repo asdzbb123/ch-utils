@@ -3,3 +3,4 @@
  */
 
 export * from './main/main'
+export * from './main/is'
