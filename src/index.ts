@@ -4,3 +4,4 @@
 
 export * from './main/main'
 export * from './main/is'
+export * from './main/transformation'
