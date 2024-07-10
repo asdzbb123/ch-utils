@@ -1,4 +1,4 @@
-import { isEmpty } from '../src/index';
+import { isEmpty } from '../../src/index';
 describe('isEmpty', () => {
     test('should return true for null', () => {
         expect(isEmpty(null)).toBe(true);

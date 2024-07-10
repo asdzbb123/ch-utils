@@ -1,31 +1,30 @@
-import type { Unit } from './main/transformation/index';
+import type { Unit } from "./main/transformation/index";
 /**
  * 声明命名空间名称、模块
  */
 declare namespace chUtils {
   /**
- * 生成uuid
- * @param {boolean} [secure=false] - 是否使用安全的随机数生成器。
- * @returns {string}  生成的UUID的字符串。
- */
-  export function uuid(secure?: boolean): string
+   * 生成uuid
+   * @param {boolean} [secure=false] - 是否使用安全的随机数生成器。
+   * @returns {string}  生成的UUID的字符串。
+   */
+  export function uuid(secure?: boolean): string;
 
   /**
-* 将面积在不同单位之间转换。
-* @param value - 面积的数量。
-* @param fromUnit - 源单位，可以是 "m2"、"km2" 或 "mu"。
-* @param toUnit - 目标单位，可以是 "m2"、"km2" 或 "mu"。
-* @returns 转换后的面积。
-*/
-  function convertArea(value: number, fromUnit: Unit, toUnit: Unit): number
+   * 将面积在不同单位之间转换。
+   * @param value - 面积的数量。
+   * @param fromUnit - 源单位，可以是 "m2"、"km2" 或 "mu"。
+   * @param toUnit - 目标单位，可以是 "m2"、"km2" 或 "mu"。
+   * @returns 转换后的面积。
+   */
+  export function convertArea(value: number, fromUnit: Unit, toUnit: Unit): number;
 
-  type DeviceType = 'AppleSystem' | 'Mobile' | 'PC';
   /**
- * 判断当前用户设备类型
- * @returns {DeviceType} 设备的类型，可以是“AppleSystem”、“Mobile”或“PC”。
- */
-  function isDeviceType(): DeviceType
+   * 检查当前设备是否为IOS
+   * @returns {boolean} 如果当前设备是 iOS 设备，则返回 `true`，否则返回 `false`
+   */
+  export function isIos(): boolean;
 }
-declare module 'ch-utils' {
-  export = chUtils
+declare module "ch-utils" {
+  export = chUtils;
 }

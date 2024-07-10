@@ -1,4 +1,4 @@
-import { uuid } from '../src/index';
+import { uuid } from '../../src/index';
 describe('生成uuid', () => {
     it('uuid() => return 未传', () => {
         const newUuid = uuid()

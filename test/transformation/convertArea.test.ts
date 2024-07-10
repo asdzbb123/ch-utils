@@ -1,4 +1,4 @@
-import { convertArea } from '../src';
+import { convertArea } from '../../src';
 describe('convertArea', () => {
     test('converts m2 to mu', () => {
         expect(convertArea(1000, 'm2', 'mu')).toBeCloseTo(1.5);
