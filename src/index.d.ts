@@ -3,7 +3,7 @@ import type { DataDesensitization } from './main/data/index';
 /**
  * 声明命名空间名称、模块
  */
-declare namespace chUtils {
+declare namespace hingUtils {
   /**
    * 生成uuid
    * @param {boolean} [secure=false] - 是否使用安全的随机数生成器。
@@ -49,6 +49,6 @@ declare namespace chUtils {
     desensitization,
   ): string
 }
-declare module "ch-utils" {
-  export = chUtils;
+declare module "hing-utils" {
+  export = hingUtils;
 }

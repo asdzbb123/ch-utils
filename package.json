@@ -1,6 +1,6 @@
 {
   "name": "hing-utils",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "hing前端工具函数",
   "main": "dist/hing-utils.cjs.js",
   "module": "dist/hing-utils.esm.js",
