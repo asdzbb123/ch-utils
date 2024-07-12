@@ -1,4 +1,5 @@
 import type { Unit } from "./main/transformation/index";
+import type { DataDesensitization } from './main/data/index';
 /**
  * 声明命名空间名称、模块
  */
@@ -32,6 +33,21 @@ declare namespace chUtils {
  * @returns
  */
   export function repeat(str: string, n: number): string
+
+  /**
+ * 数据脱敏函数工具
+ * @param des 脱敏类型()
+ * @param {string} data 需要脱敏的数据
+ * @param {number} begin [begin=0] - 自定义脱敏时，开始脱敏的位置（仅当 'des' 的值为 'custom' 时有效）
+ * @param {number} desensitization [desensitization=0] - 自定义脱敏时，需要脱敏的字符数（仅当 'des' 的值为 'custom' 时有效）
+ * @returns {string} 脱敏后的数据
+ */
+  export function dataDesensitization(
+    des: DataDesensitization,
+    data: string,
+    begin,
+    desensitization,
+  ): string
 }
 declare module "ch-utils" {
   export = chUtils;

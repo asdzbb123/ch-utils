@@ -20,3 +20,7 @@ export function isIos(): boolean {
     // return !!ua.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
     return /\(i[^;]+;( u;)? cpu.+mac os x/i.test(ua);
 }
+
+/**
+ * 判断邮箱
+ */

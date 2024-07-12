@@ -28,4 +28,8 @@ describe('convertArea', () => {
         expect(() => convertArea(1, 'invalid' as any, 'm2')).toThrow('Invalid unit provided.');
         expect(() => convertArea(1, 'm2', 'invalid' as any)).toThrow('Invalid unit provided.');
     });
+    it('should convert wmu to m2', function () {
+        let result: number = convertArea(1, "wmu", "m2");
+        expect(result).toBeCloseTo(6666666.666666667, 0.0001);
+    });
 });
