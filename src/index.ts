@@ -5,6 +5,7 @@
 export * from './main/main'
 export * from './main/is'
 export * from './main/transformation'
+export * from './main/data'
 // export * from './main/regexp'
 const logo = `
  ________  ________  ________  _______   ________                 ___  ___  ___  ________   ________     

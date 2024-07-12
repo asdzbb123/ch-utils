@@ -24,6 +24,14 @@ declare namespace chUtils {
    * @returns {boolean} 如果当前设备是 iOS 设备，则返回 `true`，否则返回 `false`
    */
   export function isIos(): boolean;
+
+  /**
+ * 生成重复字符串
+ * @param str 需要重复的字符串
+ * @param n 重复次数
+ * @returns
+ */
+  export function repeat(str: string, n: number): string
 }
 declare module "ch-utils" {
   export = chUtils;
